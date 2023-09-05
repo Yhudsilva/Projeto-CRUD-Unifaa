@@ -2,6 +2,13 @@
     user-select: none;
 }
 
+
+body{
+    background-image: url(../images/R.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .main-div{
     justify-content: center;
     align-items: center;
@@ -9,7 +16,6 @@
     width: 100vw;
     height: 100vh;
     flex-direction: column;
-    background-color: var(--cor-primaria);
 }
 
 .card-login{
@@ -23,6 +29,7 @@
     flex-direction: column;
     padding: 20px;
     margin: auto;
+    box-shadow: 0px 10px 40px #00000056;
 }
 
 .card-login>h1{
