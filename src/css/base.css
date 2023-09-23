@@ -16,3 +16,9 @@
 .noselect {
     user-select: none;
 }
+
+.cont{
+    display: flex;
+    justify-content:space-between ;
+    margin-right: 10px;
+}
