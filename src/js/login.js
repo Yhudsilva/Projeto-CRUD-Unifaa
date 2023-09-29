@@ -7,7 +7,8 @@ button.addEventListener('click', () => {
     let userSenha = senha.value;
 
     if ( !userEmail || !userSenha) {
-        alert("os campos de email e senha devem ser preenchidos")
+        swal("Os campos de E-mail e senha devem ser preenchidos!","", "info");
+        return
     }
       autenticar(userEmail,userSenha)
 });
@@ -26,7 +27,9 @@ function autenticar(email,senha) {
     .then(response => {
  
         if(!!response.mensagem){
-         alert(response.mensagem);
+
+       swal((response.mensagem),"", "error");
+        
          return;
  
         }else{
